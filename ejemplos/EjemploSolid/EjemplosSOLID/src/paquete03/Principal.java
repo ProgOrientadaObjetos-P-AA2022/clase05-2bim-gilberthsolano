@@ -8,6 +8,7 @@ package paquete03;
  * @author reroes
  */
 public class Principal {
+
     public static void main(String[] args) {
         TransporteBus bus = new TransporteBus();
         bus.establecerCooperativaBus("24 Mayo");
@@ -17,12 +18,17 @@ public class Principal {
         taxi.establecerCooperativaTaxi("Yahuarcuna");
         taxi.establecerTarifa();
         
+        TransporteTransvia transvia = new TransporteTransvia();
+        transvia.establecerCooperativaTransvia("Cuenca tranvia");
+        transvia.establecerTarifa();
+        
         TiposTransporte tipos = new TiposTransporte();
         tipos.establecerTransporteBus(bus);
         tipos.establecerTransporteTaxi(taxi);
+        tipos.establecerTransvia(transvia);
         tipos.establecerPromedioTarifas();
         
-        System.out.printf("Promedio de Tarifas: %.2f", 
+        System.out.printf("Promedio de Tarifas: %.2f",
                 tipos.obtenerPromedioTarifas());
         
     }
