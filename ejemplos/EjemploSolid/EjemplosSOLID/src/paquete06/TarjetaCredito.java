@@ -13,7 +13,13 @@ public class TarjetaCredito {
     private String nombre;
     private String codigo;
     private double cupoMaximo;
-
+    
+    public TarjetaCredito(String n, String c, double cu){
+        nombre=n;
+        codigo=c;
+        cupoMaximo=cu;
+    }
+     
     public void establecerNombre(String nombre) {
         this.nombre = nombre;
     }
