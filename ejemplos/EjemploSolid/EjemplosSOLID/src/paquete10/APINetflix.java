@@ -5,8 +5,10 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APINetflix implements APIMovie{
+
+public class APINetflix implements APIMovie, Serializable{
     
     private String apiKey;
     

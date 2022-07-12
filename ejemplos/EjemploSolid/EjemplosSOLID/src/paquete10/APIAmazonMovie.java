@@ -5,8 +5,10 @@
  */
 package paquete10;
 
+import java.io.Serializable;
 
-public class APIAmazonMovie implements APIMovie{
+
+public class APIAmazonMovie implements APIMovie, Serializable{
     
     private String apiKey;
     
